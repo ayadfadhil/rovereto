@@ -1,23 +1,56 @@
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="mine.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .textbox {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      .button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: #0056b3;
+      }
+      .button:active {
+        background-color: #262f39;
+      }
+    </style>
   </head>
   <body>
-    <p class="title">
-      Request a ride now
-    </p>
+    <p class="title">Request a ride now</p>
     <input
-      class="pickup-textbox"
+      class="textbox pickup-textbox"
       type="text"
       placeholder="Enter pickup location"
     />
     <input
-      class="destination-textbox"
+      class="textbox destination-textbox"
       type="text"
       placeholder="Enter destination"
     />
-    <input class=" request-button" type="submit " value=" Resquest now" />
-
-    <button class="schedule-button">Schedule for later</button>
+    <input class="button request-button" type="submit" value="Request now" />
+    <button class="button schedule-button">Schedule for later</button>
   </body>
 </html>
