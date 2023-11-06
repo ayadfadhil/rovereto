@@ -1,0 +1,322 @@
+
+
+
+.header {
+  display: flex;
+  position: fixed;
+  z-index: 100;
+
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 55px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(208, 206, 206);
+}
+.left-section {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+.ham-icon {
+  height: 30px;
+  padding-left: 10px;
+}
+.youtube-icon {
+  height: 30px;
+  margin-left: 30px;
+}
+.middle-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 65px;
+  margin-right: 35px;
+  max-width: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.search-bar {
+  flex: 1;
+  color: rgb(100, 100, 100);
+  height: 40px;
+  font-size: 20px;
+  padding-left: 10px;
+  width: 0;
+  border-radius: 2px;
+  border-width: 1px;
+  background-color: whitesmoke;
+  border-color: transparent;
+  border-style: solid;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+.search-bar::placeholder {
+  font-family: roboto, Arial;
+  font-size: 20px;
+
+  color: rgb(100, 100, 100);
+  border-radius: 2px;
+  background-color: whitesmoke;
+
+  margin-top: 10px;
+  margin-right: 10px;
+  border-color: transparent;
+  border-style: solid;
+  cursor: pointer;
+}
+.searsh-icon {
+  height: 100%;
+  width: 60px;
+
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+  background-color: whitesmoke;
+}
+
+.search-button-class {
+  background-color: whitesmoke;
+  height: 43px;
+  width: 65px;
+  margin-left: -1px;
+  margin-right: 10px;
+  padding: 0px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(208, 206, 206);
+  position: relative;
+  cursor: pointer;
+}
+.search-button-class div {
+  position: absolute;
+
+  top: 38px;
+  left: 6px;
+
+  font-size: 16px;
+  color: rgb(239, 233, 233);
+  border-radius: 2px;
+  background-color: rgb(102, 99, 99);
+  margin-top: 10px;
+  margin-right: 10px;
+  border-color: transparent;
+  border-style: solid;
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+}
+.search-button-class:hover div {
+  opacity: 1;
+}
+.mic-icon {
+  height: 40px;
+  width: 40px;
+
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  background-color: whitesmoke;
+  border-color: transparent;
+}
+.mic-icon-button {
+  border-radius: 2px;
+  margin-left: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+}
+.mic-icon-button div {
+  position: absolute;
+  top: 40px;
+  left: -12px;
+  font-size: 16px;
+  color: rgb(239, 233, 233);
+  border-radius: 2px;
+  background-color: rgb(102, 99, 99);
+  margin-top: 10px;
+  margin-right: 10px;
+  border-color: transparent;
+  border-style: solid;
+  border-radius: 2px;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 0.15s;
+}
+.mic-icon-button:hover div {
+  opacity: 1;
+}
+.right-section {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-shrink: 0;
+}
+.vid-creat-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  background-color: transparent;
+}
+.vid-creat-img-button {
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  background-color: whitesmoke;
+  position: relative;
+}
+.vid-creat-img-button div {
+  position: absolute;
+  top: 38px;
+  left: 5px;
+  font-size: 16px;
+  color: rgb(239, 233, 233);
+  border-radius: 2px;
+  background-color: rgb(102, 99, 99);
+  margin-top: 10px;
+  margin-right: 10px;
+  border-color: transparent;
+  border-style: solid;
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+}
+.vid-creat-img-button:hover div {
+  opacity: 1;
+}
+.toolbar-class {
+  height: 40px;
+  width: 40px;
+  border-radius: 1px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: whitesmoke;
+}
+.toolbar-class-button {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 1px;
+  padding: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: whitesmoke;
+  position: relative;
+
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.toolbar-class-button div {
+  position: absolute;
+  top: 40px;
+  left: -6px;
+  font-size: 16px;
+  color: rgb(239, 233, 233);
+  border-radius: 2px;
+  background-color: rgb(102, 99, 99);
+  margin-top: 10px;
+  margin-right: 10px;
+  border-color: transparent;
+  border-style: solid;
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+}
+.toolbar-class-button:hover div {
+  opacity: 1;
+}
+
+.notification-icon-class {
+  height: 30px;
+  width: 35px;
+
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+}
+.notification-icon-class-button {
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+
+  cursor: pointer;
+}
+.notification-relative div {
+  position: absolute;
+  top: 35px;
+  left: -15px;
+  font-size: 16px;
+  color: rgb(239, 233, 233);
+  border-radius: 2px;
+  background-color: rgb(102, 99, 99);
+  margin-top: 10px;
+  margin-right: 10px;
+  border-color: transparent;
+  border-style: solid;
+  border-radius: 2px;
+  padding: 1px;
+
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+}
+.notification-relative:hover div {
+  opacity: 1;
+}
+
+.channel-pic-class-button {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.channel-pic-class {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+}

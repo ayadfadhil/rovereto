@@ -1,0 +1,134 @@
+h3 {
+  font-family: roboto, Arial;
+  font-size: 24x;
+  font-weight: 500;
+}
+.thumbnail-img {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+  border: radius 2px;
+  border-width: 1px;
+  border-color: rgb(218, 60, 12);
+}
+
+.video-timeline {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.video-title {
+  display: inline-block;
+
+  line-height: 24px;
+}
+.video-views {
+  font-size: 14px;
+
+  color: rgb(96, 96, 96);
+
+  margin-bottom: 20px;
+}
+.video-author {
+  font-size: 14px;
+
+  color: rgb(96, 96, 96);
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.video-description {
+  font-size: 14px;
+
+  color: rgb(96, 96, 96);
+
+  margin-bottom: 10px;
+
+  line-height: 22px;
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.main-container-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  grid-gap: 1px;
+  row-gap: 1px;
+  padding-bottom: 10px;
+}
+
+.underimg-left {
+  width: 1fr;
+  margin-top: 10px;
+  position: relative;
+}
+.underimg-right {
+  display: grid;
+  row-gap: 1px;
+  vertical-align: top;
+  position: relative;
+}
+.video-time {
+  position: relative;
+}
+.video-time-absolute {
+  position: absolute;
+
+  right: 10px;
+  bottom: 10px;
+  padding: 2px 3px 2px 3px;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+
+  border-radius: 2px;
+}
+.video-title-link {
+  text-decoration: none;
+  color: black;
+}
+.profile-logo {
+  vertical-align: top;
+  width: 100%;
+  border-radius: 50%;
+}
+.video-description-grand-3 {
+  vertical-align: top;
+  width: 250px;
+  background-color: antiquewhite;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.second-child {
+  display: grid;
+  margin: 0px;
+  grid-template-columns: 50px 1fr;
+  grid-gap: 10px;
+}
+
+@media (max-width: 800px) {
+  .main-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 8001px) and (max-width: 1499px) {
+  .main-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1500px) {
+  .main-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
